@@ -49,3 +49,49 @@ end
 ```
 
 ![image](https://ws1.sinaimg.cn/large/006tNc79gy1fpc4ekqgx6j311s0gm75q.jpg)
+
+第四步：构建一个 分支
+git checkout -b recipe_controller
+### app/controllers/recipe_controller.rb
+```
+before_action :find_recipe, only: [:show,:edit,:update,:destroy]
+
+    def index
+    end
+
+    def show
+    end
+
+    def new
+      @recipe = Recipe.new
+    end
+
+    def create
+      @recipe = Recipe.new(recipe_params)
+    end
+
+    private
+
+    def recipe_params
+      params.require(:recipe).permit(:title,:description)
+    end
+
+    def find_recipe
+      @recipe = Recipe.find(params[:id])
+    end
+end
+```
+
+>rails g model Recipe title:string description:text user_id:integer
+>rake db:migrate
+
+```
+Gemfile:(https://rubygems.org/)
+gem 'simple_form', '~> 3.5', '>= 3.5.1'
+bundle install
+rails s
+rake routes
+深入路由（routes）
+```
+
+https://rails-practice.com/content/Chapter_2/2.3.html
