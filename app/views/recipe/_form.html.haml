@@ -1,0 +1,14 @@
+= simple_form_for @recipe, html:{multipart: true} do |f|
+- if @recipe.errors.any?
+#errors
+%p
+= @recipe.erroes.count
+Prevented this recipe froms saving
+%ul
+
+- @recipe.erroes.full_messages.each do |msg|
+.panel-body
+= f.input :title,input_html:{class: 'form-cintrol'}
+= f.input :description,input_html:{class: 'form-cintrol'}
+
+= f.button :submit,class:"btn btn-primary"
