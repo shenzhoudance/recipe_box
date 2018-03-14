@@ -44,4 +44,4 @@ end
 app/views/recipe/index.html.haml
 %h1 欢迎来到才华横溢职业技能大学
 
-![image](https://ws3.sinaimg.cn/large/006tNc79gy1fpc49o3zomj311a0la0ub.jpg)
+![image](https://ws1.sinaimg.cn/large/006tNc79gy1fpc4ekqgx6j311s0gm75q.jpg)
