@@ -37,11 +37,15 @@ resources :recipes
 root "recipe#index"
 rails s
 ```
-app/controllers/recipe_controller.rb
+### app/controllers/recipe_controller.rb
+```
   def index
 end
+```
 
-app/views/recipe/index.html.haml
+### app/views/recipe/index.html.haml
+```
 %h1 欢迎来到才华横溢职业技能大学
+```
 
 ![image](https://ws1.sinaimg.cn/large/006tNc79gy1fpc4ekqgx6j311s0gm75q.jpg)
