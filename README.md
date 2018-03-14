@@ -17,5 +17,5 @@ git commit -m "initial commit"
 rails s
 atom .
 ```
-![image](https://ws4.sinaimg.cn/large/006tNc79gy1fpc31o653lj319o0z81kx.jpg)
+![image](https://ws3.sinaimg.cn/large/006tNc79gy1fpc3frx4n4j31kw0x51kx.jpg)
 ![image](https://ws3.sinaimg.cn/large/006tNc79gy1fpc35p7vdvj31kw0zjtf6.jpg)
